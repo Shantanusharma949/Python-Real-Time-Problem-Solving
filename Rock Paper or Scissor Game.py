@@ -1,10 +1,10 @@
 import random
 choices = ["Rock", "Paper", "Scissors"]
-computer = random.choice(choices)
 player = False
 cpu_score = 0
 player_score = 0
 while True:
+    computer = random.choice(choices)
     player = input("Rock, Paper or  Scissors?").capitalize()
     ## Conditions of Rock,Paper and Scissors
     if player == computer:
@@ -33,5 +33,5 @@ while True:
     elif player=='End':
         print("Final Scores:")
         print(f"CPU:{cpu_score}")
-        print(f"Plaer:{player_score}")
+        print(f"Player:{player_score}")
         break
